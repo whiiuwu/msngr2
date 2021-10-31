@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Message, MessageData } from "./components/message";
 import { AuthProvider, useAuth } from "./contexts/authContext";
 import Window from "./components/window";
@@ -14,23 +14,17 @@ function App() {
     },
   ]);
 
-  const updateMessages = useCallback(
-    (newMessages: MessageData[]) => {
-      setMessages(messages.concat([...newMessages]));
-    },
-    [messages]
-  );
-
   useEffect(() => {
     onMessage((snapshot) => {
       const value = snapshot.val();
       if (value) {
         // Get snapshot values, and flatten array.
         const data = (Object.values(snapshot.val()) as MessageData[][]).flat();
-        updateMessages(data);
+
+        setMessages((m) => m.concat([...data]));
       } else {
         // In case the snapshot is empty, just add nothing initially.
-        updateMessages([]);
+        setMessages((m) => m);
       }
     });
   }, []);

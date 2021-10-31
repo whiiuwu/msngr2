@@ -92,7 +92,7 @@ export default function Window(props: {
       // telling how tall each object is without giving it a rough estimate.
       rowVirtualizer.scrollToIndex(props.items.length - 1);
     }
-  }, [props]);
+  }, [props, rowVirtualizer]);
 
   return (
     <>
