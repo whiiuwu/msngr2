@@ -1,0 +1,8 @@
+.f-message {
+  display: block;
+  max-width: 50ch;
+  padding: 0.6rem;
+  font-size: 0.8rem;
+  margin-bottom: 0.6rem;
+  background-color: rgb(207, 207, 207);
+}

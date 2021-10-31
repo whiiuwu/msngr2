@@ -1,0 +1,16 @@
+.f-window {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.f-window-loading {
+  padding: 6rem 0;
+}
+
+.f-window::-webkit-scrollbar {
+  width: 0;
+}
+
+.f-window-list::-webkit-scrollbar {
+  width: 0;
+}

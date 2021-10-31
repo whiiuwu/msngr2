@@ -1,0 +1,41 @@
+.light-theme {
+  --bg: rgb(255, 255, 255);
+  --bg-alt: rgb(243, 243, 243);
+  --bg-alt-dark: rgb(167, 167, 167);
+  --main-bright: rgb(255, 167, 193);
+  --main: rgb(255, 57, 116);
+  --main-dark: rgb(172, 16, 62);
+  --text: rgb(20, 20, 20);
+  --text-dim: rgb(105, 105, 105);
+  --text-inverse: rgb(255, 255, 255);
+  --divider: rgb(105, 105, 105);
+  --critical: rgb(172, 0, 0);
+  --warning: rgb(253, 152, 0);
+  --moderation: rgb(0, 184, 28);
+  --like: rgb(255, 57, 116);
+  --repost: rgb(156, 33, 228);
+  --bookmark: rgb(8, 114, 185);
+  --tag: rgb(148, 67, 196);
+  --tooltip-bg: rgb(26, 26, 26);
+}
+
+.dark-theme {
+  --bg: rgb(19, 7, 11);
+  --bg-alt: rgb(31, 7, 14);
+  --bg-alt-dark: rgb(49, 10, 22);
+  --main-bright: rgb(233, 120, 154);
+  --main: rgb(255, 57, 116);
+  --main-dark: rgb(124, 0, 37);
+  --text: rgb(255, 255, 255);
+  --text-dim: rgb(175, 175, 175);
+  --text-inverse: rgb(20, 20, 02);
+  --divider: rgb(105, 105, 105);
+  --critical: rgb(172, 0, 0);
+  --warning: rgb(253, 152, 0);
+  --moderation: rgb(0, 184, 28);
+  --like: rgb(255, 57, 116);
+  --repost: rgb(156, 33, 228);
+  --bookmark: rgb(8, 114, 185);
+  --tag: rgb(122, 69, 153);
+  --tooltip-bg: rgb(53, 53, 53);
+}

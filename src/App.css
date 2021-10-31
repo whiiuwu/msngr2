@@ -1,38 +1,116 @@
+@import "./theme.css";
+@import "./fonts.css";
+
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-rows: min-content auto 6rem;
+  justify-content: center;
+  height: 100vh;
+  max-height: 100vh;
+  width: 100vw;
+  max-width: 100vw;
+  background-color: var(--bg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  font-family: "Montserrat", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+div {
   display: flex;
   flex-direction: column;
+}
+
+span {
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 1.6rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.8rem;
+}
+
+pre {
+  margin: 0;
+  white-space: normal;
+}
+
+textarea {
+  resize: none;
+  width: clamp(2rem, 100%, 50ch);
+  height: 100%;
+  border: 1px solid var(--main);
+  padding: 0.6rem;
+  border-radius: 0.4rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: unset;
+  background-color: unset;
+  color: black;
+  transition: background-color 0.2s ease;
+}
+
+button:disabled {
+  background-color: var(--bg-alt-dark);
+}
+
+.App > * {
+  font-size: 0.9rem;
+  padding: 0.6rem;
+  width: 100vw;
+}
+
+.f-titlebar {
+  border-bottom: 1px solid var(--main);
+}
+
+.f-big-btn {
+  display: flex;
+  background-color: var(--main);
+  color: white;
+  min-width: 3rem;
+  height: 100%;
+  width: 3rem;
+  border-radius: 0.4rem;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.f-textarea-wrp {
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--main);
 }
